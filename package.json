@@ -1,0 +1,20 @@
+{
+  "name": "starter-react-vite",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@edwmurph/eslint-config": "5.0.1",
+    "@vitejs/plugin-react": "2.2.0",
+    "vite": "3.2.4"
+  }
+}
