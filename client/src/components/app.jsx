@@ -1,8 +1,24 @@
+import use_api from '../hooks/use-api';
+
 function App() {
+  const { data, loading, error } = use_api({ route: '/api/hello' });
+
+  if ( loading ) {
+    return <p>Loading...</p>;
+  }
+
+  if ( error ) {
+    return ( <p>
+      Error:
+      {error}
+    </p> );
+  }
+
   return (
-    <div>
-      App
-    </div>
+    <p>
+      Data:
+      {data}
+    </p>
   );
 }
 
